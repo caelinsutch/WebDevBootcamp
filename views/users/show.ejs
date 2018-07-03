@@ -1,0 +1,7 @@
+<% include ../partials/header %>
+<h1><%= user.username %></h1>
+<h1><%= user._id %> </h1>
+<% campgrounds.forEach(function(campground){ %>
+    <a href="/campgrounds/<%= campground.id %>"><%= campground.name %></a>
+<% }) %>
+<% include ../partials/footer %>

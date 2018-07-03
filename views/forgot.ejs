@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+<div class="container card p-3 my-3">
+    <div>
+     <h1>Forgot Password</h1>
+     </div>
+     <hr>
+    <form action="/forgot" method="POST" class="mx-0 px-0">
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" name="email" placeholder="Email">
+      </div>
+      <button type="submit" class="btn btn-primary" value="login">Submit</button>
+    </form>
+</div>
+<% include ./partials/footer %>
